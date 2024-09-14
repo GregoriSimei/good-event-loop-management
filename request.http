@@ -1,0 +1,4 @@
+GET http://localhost:3000/wrong
+
+###
+GET http://localhost:3000/faster

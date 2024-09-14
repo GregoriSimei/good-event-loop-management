@@ -1,0 +1,8 @@
+services:
+  app:
+    build: .
+    container_name: pdf-merge-faster
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/app/node
