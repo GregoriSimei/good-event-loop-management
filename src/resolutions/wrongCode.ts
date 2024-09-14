@@ -6,13 +6,12 @@ import path from 'path'
 import { FileSystemHandler } from '../../src/utils/FileSystemHandler'
 
 
-const QTT_EXAMS_EXEMPLE = 25
+const QTT_EXAMS_EXEMPLE = 50
 
 export class WrongCode {
     static async handle(req: Request, res: Response) {
         const startTime = performance.now()
         const memoryBefore = process.memoryUsage().heapUsed;
-
 
         console.log('iniciou wrong')
         const PDFMerger = (await import('pdf-merger-js')).default;
